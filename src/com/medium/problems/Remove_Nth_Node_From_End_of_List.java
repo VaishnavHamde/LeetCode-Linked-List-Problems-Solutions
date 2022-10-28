@@ -58,9 +58,7 @@ public class Remove_Nth_Node_From_End_of_List {
         
         for(int i = 0; i < pos; i++)
             temp = temp.next;
-        
-        ListNode1 temp2 = temp.next;
-        temp2 = null;
+
         temp.next = temp.next.next;
         
         return head;
